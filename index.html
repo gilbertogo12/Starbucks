@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proj-Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="circulo"></div>
+
+    <img src="img/logo.png" alt="logo-café" class="logo">
+
+    <div class="conteudo">
+
+        <div class="caixa-texto">
+            <h2>Não é apenas café,<br>
+                é seu <span>Starbucks</span></h2>
+            <p>O café pode ajudar no emagrecimento e outros benefícios. Melhora o desempenho físico, alívio do
+                estresse,faz
+                bem
+                para o cérebro, auxilia na digestão, reduz dores de cabeça, efeito anti-inflamatório, previne o câncer.
+            </p>
+
+            <a href="https://www.tuasaude.com/beneficios-do-cafe/" target="_blank">Cafeína Agora </a>
+
+        </div>
+        <div class="caixa-image">
+            <img src="img/img1-verde.png" alt="copo-verde" class="starbucks">
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="img/img-pequena-verde.png" alt="copo-pequeno-verde" class="copo-pequeno verde">
+        <img src="img/img-pequena-amarelo.png" alt="copo-pequeno-amarelo" class="copo-pequeno amarelo">
+        <img src="img/img-pequena-rosa.png" alt="copo-pequeno-rosa" class="copo-pequeno rosa">
+
+    </div>
+
+
+
+</body>
+
+<script>
+    let circulo = document.querySelector(".circulo")
+    let imgCopo = document.querySelector(".starbucks")
+    let verde = document.querySelector(".verde")
+    let amarelo = document.querySelector(".amarelo")
+    let rosa = document.querySelector(".rosa")
+
+
+    verde.addEventListener("click", () => {
+        imgCopo.src = "img/img1-verde.png"
+        circulo.style.background = "#017143"
+
+    })
+
+    amarelo.addEventListener("click", () => {
+        imgCopo.src = "img/img2-amarelo.png"
+        circulo.style.background = "#ffc34d"
+    })
+
+    rosa.addEventListener("click", () => {
+        imgCopo.src = "img/img3-rosa.png"
+        circulo.style.background = "#d752b1"
+
+    })
+
+</script>
+
+</html>
